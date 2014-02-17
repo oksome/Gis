@@ -8,4 +8,5 @@ argv = sys.argv[1:]
 if argv == ['s']:
     system('git status')
 else:
-    system('Unknown command')
+    print('Unknown command')
+
