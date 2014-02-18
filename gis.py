@@ -7,6 +7,8 @@ argv = sys.argv[1:]
 
 if argv == ['s']:
     system('git status')
+elif argv == ['d']:
+    system('git diff')
 elif argv == ['delete', 'last', 'commit']:
     # nuke last commit and never see it again
     system('git reset --hard HEAD~1')
