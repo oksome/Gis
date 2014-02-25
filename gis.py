@@ -15,6 +15,8 @@ elif argv == ['delete', 'last', 'commit']:
 elif argv == ['undo', 'last', 'commit']:
     # undo the commit but keep your changes for a bit of editing before you do a better commit
     system('git reset HEAD~1')
+elif argv == ['update', 'last', 'commit']:
+    system('git commit --amend')
 else:
     print('Unknown command')
 
