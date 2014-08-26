@@ -15,8 +15,8 @@ elif argv == ['delete', 'last', 'commit']:
 elif argv == ['undo', 'last', 'commit']:
     # undo the commit but keep your changes for a bit of editing before you do a better commit
     system('git reset HEAD~1')
-elif argv == (['reset', 'everything'], ['nuke']):
-    system('git git reset --hard HEAD')
+elif argv in (['reset', 'everything'], ['nuke']):
+    system('git reset --hard HEAD')
 elif argv == ['edit', 'last', 'commit']:
     system('git commit --amend')
 else:
